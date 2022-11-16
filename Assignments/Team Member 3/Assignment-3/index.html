@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h2>Assignment-3</h2>
+    <div class="main">
+        <img src="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibmsaranbucket/ST.jpg"
+            alt="image" />
+        <img src="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibmsaranbucket/msd-csk.jpg" />
+        <img src="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibmsaranbucket/Vikings.jpg"
+            alt="image" />
+        <img src="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibmsaranbucket/bridge.jpg"
+            alt="image" />
+        <img src="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibmsaranbucket/home.jpg"
+            alt="image" />
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "cb0b56ae-882c-475f-9023-b5f400a23e28", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "b756fffe-0108-412e-9268-8a28e658ffab", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
